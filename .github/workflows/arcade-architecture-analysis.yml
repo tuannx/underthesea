@@ -23,6 +23,9 @@ jobs:
       - name: Run arcade-agent architecture analysis
         uses: arcade-agent/arcade-agent/actions/analyze@v0.3.0
         with:
+          arcade-agent-version: "0.3.0"
           source-path: "."
           language: "python"
+          install-extras: ""
+          run-secondary-analyses: "false"
           post-pr-comment: "true"
